@@ -23,6 +23,10 @@ app.use(function(req, res, next) {
 
 app.use('/api', apiRouter);
 
+app.get('/', function (req, res) {
+  res.send('It works!')
+})
+
 app.set('port', (process.env.PORT || 8080));
 app.listen(app.get('port'));
 console.info('==> ✅  Server is listening in ' + process.env.NODE_ENV + ' mode');
