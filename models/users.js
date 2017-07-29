@@ -11,10 +11,6 @@ const UserSchema = new Schema({
   countries: {
     type: Array,
   },
-  color: {
-    type: String,
-    required: true,
-  },
   created: {
     type: Date,
     required: true,

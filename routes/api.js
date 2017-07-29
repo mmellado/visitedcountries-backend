@@ -14,7 +14,6 @@ const userGet = (req, res) => {
 
         user.uid = uid;
         user.countries = [];
-        user.color = '#000';
         user.created = new Date();
         user.lastUpdated = new Date();
 
@@ -46,7 +45,6 @@ const userPut = (req, res) => {
     .exec()
     .then(row => {
       User.update({ uid }, {
-        color: req.body.color,
         countries: req.body.countries,
         lastUpdated: new Date(),
       })
