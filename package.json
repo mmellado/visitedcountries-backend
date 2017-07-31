@@ -1,6 +1,6 @@
 {
   "name": "backend",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "engines": {
     "node": "7.4.0"
@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "node app.js",
-    "dev": "cross-env NODE_ENV=development nodemon app.js"
+    "dev": "cross-env NODE_ENV=development MONGODB_URI=mongodb://localhost/visitedcountries nodemon app.js"
   },
   "devDependencies": {
     "crossenv": "^6.1.1",

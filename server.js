@@ -8,7 +8,7 @@ import apiRouter from './routes/api';
 
 var app = express();
 
-mongoose.connect(`${process.env.MONGODB_URI}/worldmap`);
+mongoose.connect(`${process.env.MONGODB_URI}`);
 mongoose.Promise = global.Promise;
 
 app.use(cookieParser());
