@@ -29,7 +29,7 @@ Retrieves the user's country information
 
 ### PUT /api/users/:uid:
 
-Updates the user's country entries
+Updates the user's country entries. If the user doesn't exist, it creates it.
 
 #### Expected body
 
