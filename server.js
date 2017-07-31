@@ -25,7 +25,7 @@ app.use(function(req, res, next) {
 app.use('/api', apiRouter);
 
 app.get('/', function (req, res) {
-  res.send('It works!')
+  res.send('Status: online')
 })
 
 app.set('port', (process.env.PORT || 8080));
