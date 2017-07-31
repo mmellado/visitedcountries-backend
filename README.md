@@ -1,6 +1,6 @@
 # Visited Countries Backend
 
-This app works as the backend for the `visitedcountries` app.
+This app works as the backend for the `visitedcountries` app and is currently hosted in Heroku.
 
 It is a small NodeJS application which creates a simple express server.
 
