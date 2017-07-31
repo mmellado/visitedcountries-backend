@@ -12,7 +12,7 @@ The application consuming this service can be found at https://mmellado.github.i
 
 ### GET /api/users/:uid:
 
-Retrieves the user's country information
+Retrieves the user's country information. If the user doesn't exist, it creates it and returns an object with an empty countries array. This is to keep track of the number of users that have logged in into the app.
 
 #### Response
 
@@ -29,7 +29,7 @@ Retrieves the user's country information
 
 ### PUT /api/users/:uid:
 
-Updates the user's country entries. If the user doesn't exist, it creates it.
+Updates the user's country entries.
 
 #### Expected body
 
