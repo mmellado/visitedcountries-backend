@@ -14,12 +14,12 @@
     "express": "^4.14.0",
     "mongoose": "4.10.8"
   },
+  "devDependencies": {
+    "cross-env": "^5.0.2",
+    "nodemon": "^1.11.0"
+  },
   "scripts": {
     "start": "node app.js",
     "dev": "cross-env NODE_ENV=development MONGODB_URI=mongodb://localhost/visitedcountries nodemon app.js"
-  },
-  "devDependencies": {
-    "crossenv": "^6.1.1",
-    "nodemon": "^1.11.0"
   }
 }
